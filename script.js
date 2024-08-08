@@ -49,6 +49,7 @@ function gerarResultado (event) {
     }
 
     resultado.innerText = `O resultado da operação é ${resultadoOperacao}`
+    alert(`O resultado da operação é ${resultadoOperacao}`)
 
     inputNum1.value = ''
     inputNum2.value = ''
