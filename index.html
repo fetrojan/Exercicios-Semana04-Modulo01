@@ -14,19 +14,27 @@
 
 <body>
     <div class="container">
-        <h1>Calculadora Simples</h1>
-        <form class="d-flex flex-column align-items-center" id="calculadora">
-            <div class="d-flex mt-3 mb-3 align-items-center">
-                <label for="inputNumero1" class="col-form-label me-3 text-nowrap">Número 1</label>
-                <input type="number" id="inputNumero1" class="form-control flex-grow-1">
-            </div>
-            <div class="d-flex mb-3 align-items-center">
-                <label for="inputNumero2" class="col-form-label me-3 text-nowrap">Número 2</label>
-                <input type="number" id="inputNumero2" class="form-control flex-grow-1">
-            </div>
-            <button type="submit" class="btn btn-outline-primary align-self-center" id="calcular">Calcular</button>
-        </form>
-        <p id="resultado"></p>
+        <div class="container bg-light rounded-5 shadow">
+            <h1 class="text-center">Calculadora Simples</h1>
+            <form class="d-flex flex-column align-items-center" id="calculadora">
+                <div class="d-flex mt-3 mb-3 align-items-center">
+                    <label for="inputNumero1" class="col-form-label me-3 text-nowrap">Número 1</label>
+                    <input type="number" id="inputNumero1" class="form-control flex-grow-1" step="0.1">
+                </div>
+                <div class="d-flex mb-3 align-items-center">
+                    <label for="inputNumero2" class="col-form-label me-3 text-nowrap">Número 2</label>
+                    <input type="number" id="inputNumero2" class="form-control flex-grow-1" step="0.1">
+                </div>
+                <div class="d-flex flex-wrap">
+                    <button type="submit" class="btn btn-primary align-self-center ms-3 mt-2" id="somar">Somar</button>
+                    <button type="submit" class="btn btn-danger align-self-center ms-3 mt-2" id="subtrair">Subtrair</button>
+                    <button type="submit" class="btn btn-success align-self-center ms-3 mt-2" id="multiplicar">Multiplicar</button>
+                    <button type="submit" class="btn btn-dark align-self-center ms-3 mt-2" id="dividir">Dividir</button>
+                </div>
+            </form>
+            <hr class="border-3">
+            <p id="resultado" class="text-center mt-3 fw-semibold"></p>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
